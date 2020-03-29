@@ -1,3 +1,9 @@
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+        BASIC SETUP
+------------------------------------------------------------------------------------------------------------------------
+*/
 * {
     margin: 0;
     padding: 0;
@@ -12,26 +18,18 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+/*
+------------------------------------------------------------------------------------------------------------------------
+        REUSABLE COMPONENTS
+------------------------------------------------------------------------------------------------------------------------
+*/
 
 .row {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-.hero-text-box {
-    position: absolute;
-    width: 1140px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+/*---------------------------------------- HEADINGS ----------------------------------------*/
 
 h1 {
     margin: 0;
@@ -43,6 +41,8 @@ h1 {
     word-spacing: 4px;
     text-transform: uppercase;
 }
+
+/*---------------------------------------- BUTTONS ----------------------------------------*/
 
 .btn:link,
 .btn:visited {
@@ -82,4 +82,60 @@ h1 {
 .btn-ghost:active {
     border: 1px solid #cf6d17;
     color: #fff;
+}
+
+/*
+------------------------------------------------------------------------------------------------------------------------
+        HEADER
+------------------------------------------------------------------------------------------------------------------------
+*/
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 6px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: #cf6d17;
+    border-bottom: 2px solid #cf6d17;
 }
