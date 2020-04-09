@@ -268,6 +268,7 @@ header {
     background: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
+    transition: all 0.5s ease;
 }
 
 .sticky .main-nav {margin-top: 18px;}
@@ -642,3 +643,24 @@ footer p {
     text-align: center;
     margin-top: 20px;
 }
+
+/* Animations
+   ===================================*/
+   .js--wp-1, 
+   .js--wp-2, 
+   .js--wp-3 {
+       opacity: 0;
+       -webkit-animation-duration: 1s;
+               animation-duration: 1s;
+   }
+   
+   .js--wp-1.animated,
+   .js--wp-2.animated,
+   .js--wp-3.animated {
+       opacity: 1; 
+   }
+   
+   .js--wp-4 {
+       -webkit-animation-duration: 1s;
+               animation-duration: 1s;
+   }
