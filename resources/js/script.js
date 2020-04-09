@@ -21,7 +21,7 @@ $('.js--scroll-to-start').click(function(){
 
 /* CSS Tricks: Smooth Scrolling to elements with ID */
 
-$(function() {
+/*$(function() {
       $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
@@ -34,7 +34,7 @@ $(function() {
               }
            }
      });
-});
+});*/
 
 /* Add Animations on scroll */
 
@@ -60,9 +60,10 @@ $('.js--wp-4').waypoint(function(direction) {
 });
 
 /* Mobile Navigation */
-$('.js--nav-icon').click(function() {
-    var nav = $('.js--main-nav');
-    var icon = $('.js--nav-icon i')
+$('.--js-nav-icon').click(function() {
+    let nav = $('.js--main-nav');
+    console.log(nav);
+    let icon = $('.--js-nav-icon i')
 
     nav.slideToggle(200);
     /* switch from hamburger to cross icon */
@@ -73,4 +74,4 @@ $('.js--nav-icon').click(function() {
         icon.addClass('ion-navicon-round');
         icon.removeClass('ion-close-round');
     }
-});
+  });
