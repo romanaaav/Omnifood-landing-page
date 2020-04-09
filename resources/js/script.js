@@ -62,7 +62,6 @@ $('.js--wp-4').waypoint(function(direction) {
 /* Mobile Navigation */
 $('.--js-nav-icon').click(function() {
     let nav = $('.js--main-nav');
-    console.log(nav);
     let icon = $('.--js-nav-icon i')
 
     nav.slideToggle(200);
