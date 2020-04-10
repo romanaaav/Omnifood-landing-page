@@ -39,21 +39,21 @@
 <body>
     <header>
             <nav>
-                <div class="row">
+                <div id="inicio" class="row">
                     <img src="resources/img/logo-white.png" alt="Omnifood Logo" class="logo">
                     <img src="resources/img/logo.png" alt="Omnifood Logo" class="logo-black">
                     <ul class="main-nav js--main-nav">
-                        <li><a href="">Food delivery</a></li>
-                        <li><a href="">How it works</a></li>
-                        <li><a href="">Our cities</a></li>
-                        <li><a href="">Sign up</a></li>
+                        <li id="delivery"><a href="">Food delivery</a></li>
+                        <li id="howitworks"><a href="">How it works</a></li>
+                        <li id="city"><a href="">Our cities</a></li>
+                        <li id="singup"><a href="">Sign up</a></li>
                     </ul>
                     <a class="mobile-nav-icon  --js-nav-icon"><i class="ion-navicon-round"></i></a>
                 </div>
             </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food.<br> Hello super healthy meals.</h1>
-            <a class="btn btn-full" href="#">I'm hungry</a>
+            <a id="hungry" class="btn btn-full" href="#">I'm hungry</a>
             <a class="btn btn-ghost" href="#">Show me more</a>
         </div>
     </header>
@@ -145,7 +145,7 @@
 
     <section class="section-steps" id="works">
         <div class="row">
-            <h2>How it works &mdash; Simple as 1, 2, 3</h2>    
+            <h2 id="worksLabel">How it works &mdash; Simple as 1, 2, 3</h2>    
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
@@ -437,6 +437,7 @@
     <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script> <!-- Allows CSS3 pseudoclasses in older browsers-->
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="resources/js/script.js"></script>
+    <script src="scripts/buttons.js"></script>
     
 </body>
 </html>
